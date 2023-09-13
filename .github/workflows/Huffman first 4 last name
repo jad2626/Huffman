@@ -1,0 +1,38 @@
+ //Create a priority queue
+
+
+(D,1) (E,1) (N,1) (A,1)
+
+
+    //Remove the two nodes with the lowest frequencies
+    //Create a new internal node with a frequency equal to the sum of the frequencies of the two nodes removed
+    //Add the new internal node back to the queue
+    //Construct the Huffman tree
+ 
+      (2)
+     /   \
+   (D,1) (E,1)
+
+//Remove (D,1) and (E,1) and create an internal node with a frequency of 2
+
+
+
+      (2)       (2)
+     /   \     /   \
+   (D,1) (E,1) (N,1) (A,1)
+
+//Remove (N,1) and (A,1) and create another internal node with a frequency of 2
+
+
+            (4)
+           /   \
+         (2)   (2)
+        /   \ /   \
+      (D,1) (E,1) (N,1) (A,1)
+//there is only one node left in the queue this is the root of the Huffman tree
+//Assign binary codes to the letters
+
+D -> 00
+E -> 01
+N -> 10
+A -> 11
